@@ -12,7 +12,7 @@ import java.net.Socket;
 * And starting new connections each in its own thread
 *
 */
-public class SimpleDemo1Threaded {
+public class SimpleDemo1ThreadedOG {
     private ServerSocket server;
 
     // Purpose: To start a new ServerSocket and endlessly listen for client connections
@@ -41,7 +41,7 @@ public class SimpleDemo1Threaded {
         }
     }
     public static void main(String[] args){
-        new SimpleDemo1Threaded().run(8080);
+        new SimpleDemo1ThreadedOG().run(8080);
     }
     private static class ClientHandler implements Runnable{
         private Socket clientSocket;
