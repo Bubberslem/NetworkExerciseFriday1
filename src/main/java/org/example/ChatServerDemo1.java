@@ -47,6 +47,16 @@ public class ChatServerDemo1 implements IObservable{
         }
     }
 
+    @Override
+    public void addObserver(IObserver observer) {
+
+    }
+
+    @Override
+    public void removeObserver(IObserver observer) {
+
+    }
+
     public static void main(String[] args) {
         new ChatServerDemo1().startServer(8080);
     }
